@@ -2,4 +2,4 @@
 mystr = ""
 for i in range(97, 123):
     mystr = mystr + chr(i)
-print(mystr, end="")
+print("{}".format(mystr), end="")
