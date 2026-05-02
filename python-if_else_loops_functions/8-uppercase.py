@@ -6,4 +6,4 @@ def uppercase(str):
             newstr = newstr + a
         else:
             newstr = newstr + chr(ord(a) - 32)
-    return newstr
+    print("{}".format(newstr))
