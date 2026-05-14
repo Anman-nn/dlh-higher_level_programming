@@ -7,7 +7,7 @@ def safe_print_list(my_list=[], x=0):
             int(my_list[n])
             new_str += str(my_list[n])
         except:
-            break
+            pass
         n += 1
     try:
         print(int(new_str))    
