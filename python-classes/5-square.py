@@ -22,7 +22,7 @@ class Square:
         return self.__size ** 2
     def my_print(self):
         """Prits square with #"""
-        if self.size = 0:
+        if self.size == 0:
             print('')
         else:
             for _ in range(self.size):
