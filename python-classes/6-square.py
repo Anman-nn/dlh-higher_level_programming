@@ -14,10 +14,12 @@ class Square:
     def size(self):
         """This is getter for Size property"""
         return self.__size
+
     @property
     def position (self):
         """This is getter for Position property"""
         return self.__position
+
     @size.setter
     def size(self, value):
         """This is setter to use: size = x and check the value"""
@@ -26,6 +28,7 @@ class Square:
         if value < 0:
             raise ValueError("size must be >= 0")
         self.__size = value
+
     @position.setter
     def position(self, value):
         """This is setter to use: position = x and check the value"""
@@ -35,9 +38,11 @@ class Square:
         or value[0] < 0 or value[1] < 0):
             raise TypeError("position must be a tuple of 2 positive integers")
         self.__position = value          
+
     def area(self):
         """returns the current square area"""
         return self.__size ** 2
+
     def my_print(self):
         """Prits square with #"""
         if self.size == 0:
