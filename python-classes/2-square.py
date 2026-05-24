@@ -1,7 +1,10 @@
 #!/usr/bin/python3
 """Module for class Square"""
+
+
 class Square:
     """Defines a square class"""
+    
     def __init__(self, size=0):
         """This is _init_ function"""
         self.__size = size
