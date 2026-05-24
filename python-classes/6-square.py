@@ -1,11 +1,15 @@
 #!/usr/bin/python3
 """Module for class Square"""
+
+
 class Square:
     """Defines a square class"""
+
     def __init__(self, size=0, position=(0, 0)):
         """This is _init_ function"""
         self.size = size
         self.position = position
+
     @property
     def size(self):
         """This is getter for Size property"""
