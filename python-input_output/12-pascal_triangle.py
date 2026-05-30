@@ -9,7 +9,8 @@ def pascal_triangle(n):
         return []
 
     if n == 1:
-        return [1]
+        return list(1)
+
     res = [[1], [1, 1]]
 
     if n == 2:
