@@ -2,7 +2,7 @@
 """Module: learning input - output"""
 
 
-def to_json_string(my_obj):
+def from_json_string(my_str):
     """Function to_json_string"""
     import json
     return json.loads(my_obj)
