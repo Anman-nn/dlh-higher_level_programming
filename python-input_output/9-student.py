@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Module for a Class - Student"""
 
+
 class Student:
 
     def __init__(self, first_name, last_name, age):
@@ -10,4 +11,3 @@ class Student:
 
     def to_json(self):
         return self.__dict__
-    
