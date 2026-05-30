@@ -29,5 +29,5 @@ class Student:
     def reload_from_json(self, json):
         import json
         data = json.loads(json)
-        for a, b in data:
-            self.__dict__[a] = b
+        for a, b in data.items():
+            setattr(self, a, b)
