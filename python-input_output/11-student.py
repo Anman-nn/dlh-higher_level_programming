@@ -27,7 +27,6 @@ class Student:
         return res
 
     def reload_from_json(self, json):
-        import json
         data = json.loads(json)
         for a, b in data.items():
             setattr(self, a, b)
