@@ -10,7 +10,7 @@ class Student:
         self.age = age
 
     def to_json(self, attrs=None):
-        
+
         if not isinstance(attrs, list):
             return self.__dict__
 
@@ -20,5 +20,8 @@ class Student:
 
         res = {}
         for a in attrs:
-            res[a] = self.__dict__[a]    
+            try:
+                res[a] = self.__dict__[a]
+            except KeyError:
+                continue
         return res
