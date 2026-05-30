@@ -11,7 +11,7 @@ class Student:
 
     def to_json(self, attrs=None):
         
-        if not attrs or attrs == []:
+        if not isinstance(attrs, list):
             return self.__dict__
 
         for a in attrs:
