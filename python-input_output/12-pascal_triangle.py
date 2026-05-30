@@ -3,6 +3,7 @@
 
 
 def pascal_triangle(n):
+    """Function is documented"""
 
     if n <= 0:
         return []
